@@ -39,10 +39,6 @@ body {
   min-height: 35vh;
   display: flex;
   justify-content: flex-start;
-  height: 100vh;
-  height: -moz-available;
-  height: -webkit-fill-available;
-  height: fill-available;
 }
 .container {
   width: 80%;
@@ -216,6 +212,12 @@ body {
   #opcionPorFiltro {
     display: flex;
     justify-content: start;
+  }
+  .hero {
+    height: auto;
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
   }
   .hero__text h1 {
     font-size: 6rem;
