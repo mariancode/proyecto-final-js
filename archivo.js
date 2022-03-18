@@ -263,7 +263,7 @@ function carritoHTML(lista) {
                 }" class="btn btn-success btn-sub fa-solid fa-circle-minus "></a>
                 <a id="${
                   producto.id
-                }" class="btn btn-success btn-delete fa-solid fa-trash-can "></a>`;
+                }" class="btn btn-success btn-delete fa-solid fa-trash-can "></a><hr>`;
     console.log(prod);
     productosCarrito.append(prod);
   }
