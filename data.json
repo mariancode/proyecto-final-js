@@ -1,0 +1,218 @@
+[
+  {
+    "id": "0014",
+    "edad": 10,
+    "piezas": 100,
+    "tema": "Flores",
+    "categoria": [0],
+    "precio": 38,
+    "img": "img/plants puzzle.png"
+  },
+  {
+    "id": "0001",
+    "edad": 8,
+    "piezas": 200,
+    "tema": "Campo",
+    "categoria": [0],
+    "precio": 29.99,
+    "img": "img/campo puzzle.jpg"
+  },
+  {
+    "id": "0002",
+    "edad": 15,
+    "piezas": 1000,
+    "tema": "Navidad",
+    "categoria": [0],
+    "precio": 26.99,
+    "img": "img/navidad puzzle.jpg"
+  },
+  {
+    "id": "0003",
+    "edad": 10,
+    "piezas": 300,
+    "tema": "Personas",
+    "categoria": [0],
+    "precio": 45.99,
+    "img": "img/personas puzzle.jpg"
+  },
+  {
+    "id": "0006",
+    "edad": 4,
+    "piezas": 18,
+    "tema": "Gatos",
+    "categoria": [0],
+    "precio": 15.99,
+    "img": "img/gato puzzle.jpg"
+  },
+  {
+    "id": "0004",
+    "edad": "+17",
+    "piezas": 3500,
+    "tema": "Atardecer",
+    "categoria": [1],
+    "precio": 68,
+    "img": "img/atardecer puzzle.jpg"
+  },
+  {
+    "id": "0007",
+    "edad": "+18",
+    "piezas": 1500,
+    "tema": "Frida II",
+    "categoria": [1],
+    "precio": 59.99,
+    "img": "img/frida2 puzzle.jpg"
+  },
+  {
+    "id": "0042",
+    "edad": "+18",
+    "piezas": 2500,
+    "tema": "Abejas",
+    "categoria": [1],
+    "precio": 59.99,
+    "img": "img/abejas puzzle.jpg"
+  },
+  {
+    "id": "0057",
+    "edad": "+18",
+    "piezas": 3000,
+    "tema": "Festival",
+    "categoria": [1],
+    "precio": 59.99,
+    "img": "img/Summer-Festival puzzle.jpg"
+  },
+  {
+    "id": "0011",
+    "edad": 15,
+    "piezas": 250,
+    "tema": "Yoga",
+    "categoria": [0],
+    "precio": 38,
+    "img": "img/yoga puzzle.jpg"
+  },
+  {
+    "id": "0010",
+    "edad": 8,
+    "piezas": 150,
+    "tema": "Nieve",
+    "categoria": [0],
+    "precio": 35,
+    "img": "img/nieve puzzle.jpg"
+  },
+  {
+    "id": "0012",
+    "edad": "+16",
+    "piezas": 1000,
+    "tema": "Puerto",
+    "categoria": [1],
+    "precio": 44,
+    "img": "img/HARBOUR puzzle.jpg"
+  },
+  {
+    "id": "0013",
+    "edad": "+18",
+    "piezas": 3000,
+    "tema": "Gin Tonic",
+    "categoria": [1],
+    "precio": 65,
+    "img": "img/gin puzzle.jpg"
+  },
+  {
+    "id": "0015",
+    "edad": 3,
+    "piezas": 15,
+    "tema": "La granja",
+    "categoria": [0],
+    "precio": 12.99,
+    "img": "img/animales puzzle.png"
+  },
+  {
+    "id": "0016",
+    "edad": "+18",
+    "piezas": 2500,
+    "tema": "Frida",
+    "categoria": [1],
+    "precio": 62.9,
+    "img": "img/frida puzzle.png"
+  },
+  {
+    "id": "0005",
+    "edad": 6,
+    "piezas": 50,
+    "tema": "Gato Leopardo",
+    "categoria": [0],
+    "precio": 23.99,
+    "img": "img/gato2 puzzle.jpg"
+  },
+  {
+    "id": "0058",
+    "edad": 2,
+    "piezas": 6,
+    "tema": "Dinosaurio Azul",
+    "categoria": [0],
+    "precio": 12.99,
+    "img": "img/dinosaurio3 puzzle.jpg"
+  },
+  {
+    "id": "0009",
+    "edad": 3,
+    "piezas": 12,
+    "tema": "Perro Dálmata",
+    "categoria": [0],
+    "precio": 12.99,
+    "img": "img/perro puzzle.jpg"
+  },
+  {
+    "id": "0008",
+    "edad": 5,
+    "piezas": 45,
+    "tema": "Dinosaurio Rojo",
+    "categoria": [0],
+    "precio": 21.99,
+    "img": "img/dinosaurio2 puzzle.jpg"
+  },
+  {
+    "id": "0019",
+    "edad": 3,
+    "piezas": 12,
+    "tema": "Perro Bulldog",
+    "categoria": [0],
+    "precio": 12.99,
+    "img": "img/perro2 puzzle.jpg"
+  },
+  {
+    "id": "0018",
+    "edad": 5,
+    "piezas": 45,
+    "tema": "Gato Gris",
+    "categoria": [0],
+    "precio": 21.99,
+    "img": "img/gato3 puzzle.jpg"
+  },
+  {
+    "id": "00029",
+    "edad": 4,
+    "piezas": 20,
+    "tema": "Dinosaurio Naranja",
+    "categoria": [0],
+    "precio": 12.99,
+    "img": "img/dinosaurio puzzle.jpg"
+  },
+  {
+    "id": "0068",
+    "edad": 7,
+    "piezas": 65,
+    "tema": "Labrador",
+    "categoria": [0],
+    "precio": 21.99,
+    "img": "img/Labrador puzzle.jpg"
+  },
+  {
+    "id": "0037",
+    "edad": 7,
+    "piezas": 65,
+    "tema": "Perro Salchicha",
+    "categoria": [0],
+    "precio": 21.99,
+    "img": "img/perro3 puzzle.jpg"
+  }
+]

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>El mundo de los Rompecabezas</title>
+    <link rel="icon" href="img/puzzle.png">
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+      <!--animaciín link aos-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+  integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/bb76bef763.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <!-- etiqueta superior -->
+      <p class="etiqueta"><i class="fa-solid fa-truck"></i> Envío gratis a partir de $150. </p>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light px-md-3 py-md-0">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/puzzle logo.png" alt="logo imagen" class="logoImg pt-2 ml-2">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white  textClass" href="#">Nosotros</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white textClass" href="#colProducto">Productos</a>
+              </li>
+            </ul> 
+        <div class="container d-flex justify-content-end"> 
+          <!-- botón carrito -->
+            <button
+            type="button"
+            class="btn btn-outline-light btnCarrito"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+          <i class="fa-solid fa-cart-shopping carritoShopping"></i>  <span id="cantidad" class="badge bg-secondary">0</span>
+          </button>
+      </nav>
+          <!-- Banner Image  -->
+      <div class="hero">
+      <div class="container row">
+        <div class="hero__text">
+          <h1>El mundo de los rompecabezas</h1>
+          <a href="#colProducto" class="cta">COMPRAR</a>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+    </main>
+
+    <!-- filtro por temas, precio y edad-->
+    <div class="filtro">
+      <div class="container">
+        <div id="opcionPorFiltro">
+          <div id="divTema" ><h3 class="neonText" >Por temas </h3></div>
+          <div  id="divPrecio"><h3 class="neonText">Por Precio </h3></div>
+          <div  id="divEdad"><h3 class="neonText" >Por Edad </h3></div>
+          <div  id="divPiezas"><h3 class="neonText" >Por Piezas </h3></div>
+        </div>
+      </div>
+    </div>
+    <!-- Buscador -->
+    <div class="row">
+      <div class="container">
+        <form class="d-flex justify-content-center align-items-center" id="buscadorProductos">
+          <input type="search" name="search" id="buscador" placeholder="Buscar rompecabezas..." autocomplete="off" />
+      
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Vitrina productos -->
+    <section  class="col">
+        <div class="container">
+          <div id="colProducto" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
+    </section>
+    <!-- Modal productos-->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-bg-dark modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="staticBackdropLabel"><i class="fa-solid fa-cart-shopping"> Carrito de compras</i></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="productosCarrito" class="modal-body">
+            <!-- Carrito desde JS -->
+          </div>
+          <div class="modal-footer">
+            <p id="totalCarrito"></p>
+            <button
+              id="cerrar"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button id="confirmar" type="button" class="btn btn-primary">
+              Confirmar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Formulario Newsletter -->
+    <div class="form">
+      <form id="registroSuscriptores" class="container">
+        <h5>INSCRÍBETE AL NEWSLETTER Y RECIBE UN 10% DE DESCUENTO:</h5>
+        <input id="nombre" type="text" placeholder="Nombre" />
+        <input id="email" type="email" placeholder="E-mail" />
+        <input id="emailBtn" type="submit" value="enviar" />
+      </form>
+    </div>
+    <!-- Footer -->
+
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="#">El Mundo de los Rompecabezas</a>
+        <p><i class="fa-solid fa-bullhorn"></i> Las imágenes solo fueron tomadas a modo de ejemplo.</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- Script navbar transparente -->
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-danger', 'shadow');
+      } else {
+        nav.classList.remove('bg-danger', 'shadow');
+      }
+    });
+  </script>
+  <script src="archivo.js"></script>
+  </body>
+</html>

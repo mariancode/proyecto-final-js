@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+.logoImg {
+  size: 20px;
+}
+.textClass {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  text-shadow: 0.04em 0.04em 0 hsla(230, 40%, 50%, 1);
+}
+.etiqueta {
+  font-size: 1em;
+  background-color: #3f3351;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 0.2em;
+}
+.hero {
+  background-image: url(./img/271428747_447601577025784_676531092929748621_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 35vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.container {
+  width: 80%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.hero__text h1 {
+  font-family: "Righteous", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 1em 0;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 0.04em 0.04em 0 hsla(230, 40%, 50%, 1);
+  word-wrap: initial;
+} /* Botn cssbuttons.io */
+.cta {
+  display: block;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(231, 206, 255);
+  --glow-color: rgb(220, 197, 241);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(157, 139, 173);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 0.8em 1.25em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: roboto;
+  background-color: var(--btn-color);
+  border-radius: 100px;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color); /* text-shadow: 0 0 0.5em var(--glow-color); */
+  position: relative;
+  transition: all 0.3s;
+  margin: 1.5em 0;
+}
+.cta::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+.cta:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+.cta:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+.tituloSection {
+  font-size: 2em;
+  padding: 0.8em 0;
+  color: #fdfd96;
+  font-weight: 700;
+}
+.tituloSection h3 {
+  margin: 0;
+}
+.optionSection h3 {
+  color: white;
+}
+.main {
+  background-color: #3f3351;
+}
+.form {
+  background-color: #3f3351;
+  color: white;
+  padding: 2em 0;
+  text-shadow: 0 0 3px yellow;
+}
+.filtro {
+  background-color: #3f3351;
+  padding: 2em;
+  color: white;
+}
+.col {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='55' height='55' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(230)'%3E%3Crect width='100%25' height='100%25' fill='rgba(213, 191, 191,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='%23f6e05e'/%3E%3Cpath d='M-60 32l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-60-8l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-60 72l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(240, 255, 244,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "); /* url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='33' height='33' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(230)'%3E%3Crect width='100%25' height='100%25' fill='rgba(213, 191, 191,1)'/%3E%3Cpath d='M-20 30.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 70.5l20-20l20 20l20-20l20 20l20-20l20 20v-1l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='%23f6e05e'/%3E%3Cpath d='M-60 32l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-60-8l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-60 72l20-20l20 20l20-20l20 20l20-20l20 20l20-20l20 20v-4l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(240, 255, 244,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "); */
+  margin-top: 1em;
+}
+.btnCarrito {
+  margin: 1em 0;
+  box-shadow: 10px 10px #bb77b2;
+}
+.img-carrito {
+  width: 10em;
+}
+#buscador {
+  margin: 2em auto;
+  width: 80%;
+  padding: 0.7em 2.7em; /* border: 5px rgb(148, 114, 148); */
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid rgb(148, 114, 148);
+  background: white;
+  border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+  color: rgb(122, 120, 120);
+  box-shadow: 10px 10px rgb(187, 119, 178);
+  margin-bottom: 2em;
+  padding: 1em;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+#buscadorProductos {
+  background-color: rgba(245, 241, 248, 0.356);
+}
+.neonText {
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 0 0 3px yellow;
+  margin-right: 0.5em;
+}
+.card-img-top {
+  width: 90%;
+  height: 17rem;
+  object-fit: cover;
+  padding: 0.02rem !important;
+}
+.card-text {
+  color: white;
+  font-weight: bold;
+  padding: 0.5em;
+  width: 80px !important;
+  background-color: rgb(221, 221, 53);
+  border-radius: 0.25rem;
+}
+.card-title {
+  font-size: Syne Mono !important;
+}
+.carritoShopping {
+  padding: 0.3em;
+}
+
+.navbar-toggler-icon {
+  color: #3f3351;
+  margin-right: auto;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+  .hero__text h1 {
+    font-size: 5rem;
+    padding: 1em 0 0.4em 0;
+  }
+}
+@media (min-width: 900px) {
+  #opcionPorFiltro {
+    display: flex;
+    justify-content: start;
+  }
+  .hero__text h1 {
+    font-size: 6rem;
+    width: 70%;
+    margin: 1rem 0;
+  }
+  .neonText {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text h1 {
+    font-size: 6.5rem;
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+  }
+  .cta {
+    padding: 1em 1.5em;
+  }
+}
