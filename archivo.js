@@ -17,9 +17,7 @@ class Rompecabeza {
     this.carrito = carrito;
   }
   subTotal() {
-    let resultado = this.precio * this.cantidad;
-    let resultado1 = resultado.toFixed(2);
-    return resultado1;
+    return this.precio * this.cantidad;
   }
   addCantidad(valor) {
     this.cantidad += valor;
@@ -321,11 +319,13 @@ function subCarrito() {
 function totalCarrito() {
   let total = carrito.reduce(
     (totalCompra, actual) => (totalCompra += actual.subTotal()),
-    ""
+    0
   );
-  totalCarritoInterfaz.innerHTML = "Total: $" + total;
 
-  if (total > 150) {
+  let totalFinal = total.toFixed(2);
+  totalCarritoInterfaz.innerHTML = "Total: $" + totalFinal;
+
+  if (totalFinal > 150) {
     //Toastify
     Toastify({
       text: `🙌 Tienes el envío gratis`,
