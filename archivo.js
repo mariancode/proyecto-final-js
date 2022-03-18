@@ -250,7 +250,7 @@ function carritoHTML(lista) {
   productosCarrito.innerHTML = "";
   for (const producto of lista) {
     let prod = document.createElement("div");
-    prod.innerHTML = `<span class="badge bg-dark">Rompecabeza:</span> ${
+    prod.innerHTML = `<span class="badge bg-success">Rompecabeza:</span> ${
       producto.tema
     }<hr>
                 <img src="${producto.img}" class="img-carrito"><br>
