@@ -250,7 +250,9 @@ function carritoHTML(lista) {
   productosCarrito.innerHTML = "";
   for (const producto of lista) {
     let prod = document.createElement("div");
-    prod.innerHTML = `Rompecabeza: ${producto.tema}<hr>
+    prod.innerHTML = `<span class="badge bg-dark">Rompecabeza:</span> ${
+      producto.tema
+    }<hr>
                 <img src="${producto.img}" class="img-carrito"><br>
                 <span class="">Precio: $ ${producto.precio}</span> <br>
                 <span class="">Cantidad: ${producto.cantidad}</span><br>
@@ -296,8 +298,8 @@ function addCarrito() {
 
   producto.addCantidad(1);
 
-  this.parentNode.children[5].innerHTML = "Cantidad: " + producto.cantidad;
-  this.parentNode.children[7].innerHTML = "Subtotal: " + producto.subTotal();
+  this.parentNode.children[6].innerHTML = "Cantidad: " + producto.cantidad;
+  this.parentNode.children[8].innerHTML = "Subtotal: " + producto.subTotal();
 
   totalCarrito();
   localStorage.setItem("Carrito", JSON.stringify(carrito));
@@ -308,8 +310,8 @@ function subCarrito() {
   if (producto.cantidad > 1) {
     producto.addCantidad(-1);
 
-    this.parentNode.children[5].innerHTML = "Cantidad: " + producto.cantidad;
-    this.parentNode.children[7].innerHTML = "Subtotal: " + producto.subTotal();
+    this.parentNode.children[6].innerHTML = "Cantidad: " + producto.cantidad;
+    this.parentNode.children[8].innerHTML = "Subtotal: " + producto.subTotal();
 
     totalCarrito();
     localStorage.setItem("Carrito", JSON.stringify(carrito));
@@ -370,7 +372,7 @@ confirmar.onclick = () => {
       productosCarrito.innerHTML = `<h3>Información del Envio</h3>
                               <select id="provFiltro"></select> 
                               <select id="munFiltro"></select>
-                              <button id="btnEnvio" class="btn text-success btn-warning">Confirmar dirección de envío ✅</button>`;
+                              <button id="btnEnvio" class="btn text-dark btn-warning">Confirmar dirección de envío ✅</button>`;
 
       const provFiltro = document.getElementById("provFiltro");
 
